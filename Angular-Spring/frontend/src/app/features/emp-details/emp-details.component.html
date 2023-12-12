@@ -1,0 +1,24 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title> Employee Details</mat-card-title>
+    <div *ngIf="employee">
+      <div class="row">
+        <div class="col-md-3 start-col">
+          <label><b>Employee Id: </b></label> {{employee.empId}}
+        </div>
+        <div class="col-md-3">
+          <label><b>Employee Name: </b></label> {{employee.name}}
+        </div>
+        <div class="col-md-3">
+          <label><b>Employee Age: </b></label> {{employee.age}}
+        </div>
+        <div class="col-md-3">
+          <label><b>Employee Department: </b></label> {{employee.dept}}
+        </div>
+      </div>
+    </div>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="warn" (click)="navigateEmpList()">Back</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

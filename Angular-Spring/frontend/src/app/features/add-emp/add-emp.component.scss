@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+mat-card-title {
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+
+mat-form-field{
+  width: 100%;
+}
+.save-button {
+  margin-right: 5px;
+}
+
+.main-row {
+  padding-left: 20px;
+  padding-right: 20px;
+}

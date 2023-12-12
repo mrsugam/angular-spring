@@ -1,0 +1,26 @@
+.dialog-row {
+  height: 132px !important;
+  width: 102% !important;
+}
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  color: #D6002A;
+  height: 45px;
+  padding-top: 5px;
+  border-bottom: 1px solid #e3dbdb;
+}
+.close-btn {
+  color: #707070
+}
+.message-dialog {
+  font-weight: bold;
+
+}
+
+.save-button {
+  margin-right: 5px;
+  margin-left: 14px;
+}

@@ -1,0 +1,32 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title> Add Employee</mat-card-title>
+    <form class="example-form" [formGroup]="myForm" (ngSubmit)="submitForm()">
+      <div class="row main-row">
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Employee Name</mat-label>
+            <input matInput formControlName="name" placeholder="Enter Full Name">
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Age</mat-label>
+            <input matInput formControlName="age" placeholder="Enter Age">
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <mat-label>Department</mat-label>
+            <input matInput formControlName="dept" placeholder="Enter Department">
+          </mat-form-field>
+        </div>
+      </div>
+      <mat-card-actions align="end">
+        <button class="save-button" mat-raised-button color="primary" type="submit"
+          [disabled]="myForm.invalid">Save</button>
+        <button mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>

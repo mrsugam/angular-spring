@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+mat-card-title {
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+.start-col {
+  padding-left: 5%;
+}

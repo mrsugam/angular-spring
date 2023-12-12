@@ -1,0 +1,22 @@
+<div class="row dialog-row">
+  <div class="col-md-12">
+    <div mat-dialog-title class="dialog-title">
+      <p class="model-title">{{alertTitle}}</p>
+      <button mat-icon-button aria-label="close dialog" mat-dialog-close class="close-btn">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <div class="row" class="width-100perc">
+      <div class="col-md-12" class="margin-left-10">
+          <p class="message-dialog">{{message}}</p>
+          <div class="button-group" align="end">
+              <button class="save-button" mat-raised-button color="primary" (click)="onConfirmClick()">
+                  {{confirmButtonText}}</button>
+              <button mat-raised-button mat-raised-button mat-dialog-close color="warn">
+                  {{cancelButtonText}} </button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
